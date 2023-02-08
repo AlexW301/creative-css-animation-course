@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #222;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+        font-family: "roboto";
+        font-size: 40px;
+        border: 3px solid white;
+        padding: 40px 80px;
+        transition: all 0.5s;
+        font-weight: 300;
+        position: relative;
+        overflow: hidden;
+      }
+
+      a:before {
+        content: "YEAH!";
+        color: white;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #f44336;
+        transform: translateY(-100%);
+        transition: all 1s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      a:hover:before {
+        transform: translateY(0);
+      }
+
+    </style>
+  </head>
+  <body>
+    <a href="#">Hover Me</a>
+  </body>
+</html>
