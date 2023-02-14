@@ -1,0 +1,113 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        background-color: #262626;
+      }
+
+      .container {
+        width: 450px;
+        height: 300px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .container:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #2d3436;
+        opacity: 0.8;
+        transition: all 0.25s;
+        transform: translate(550px, 300px) rotate(45deg);
+      }
+
+      .caption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 17px;
+        padding: 20px;
+        margin-top: 20px;
+        background-color: rgb(0, 0, 0, 0.8);
+        transition: all 0.25s;
+      }
+
+      p {
+        font-size: 16px;
+        width: 80%;
+        align-self: center;
+        text-align: center;
+        transition: all 0.25s;
+      }
+
+      a {
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        width: 100px;
+        padding: 15px;
+        margin-bottom: 20px;
+        align-self: center;
+        transition: all 0.25s;
+      }
+
+      .container {
+        background-color: #444;
+        border: 10px solid white;
+      }
+
+      img {
+        transition: all 0.5s;
+        transition-delay: 0.5s;
+      }
+
+      .container:before {
+        background-color: #006266;
+        transform: scale(0) rotate(-180deg);
+        transition: all 0.5s;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="1.jpg" alt="image" />
+      <div class="caption">
+        <h2>image hover</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore nesciunt eum, iste, est quasi nobis
+          asperiores perspiciatis aut adipisci corrupti rerum error nihil qui explicabo nostrum pariatur.
+        </p>
+        <a href="#">read more</a>
+      </div>
+    </div>
+  </body>
+</html>
